@@ -1,0 +1,328 @@
+{
+    "address":"0x6e86fd3988899e28F9Ec3b28F3f58AdDd425A939",
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_tokenInAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "_tokenInAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_tokenMiddleAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_tokenOutAddress",
+            "type": "address"
+          }
+        ],
+        "name": "getEstimatedMultiHop",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_tokenInAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "_tokenInAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_tokenOutAddress",
+            "type": "address"
+          }
+        ],
+        "name": "getEstimatedSingleHop",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "tokenAmountIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "_tokenInAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_tokenMiddleAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_tokenOutAddress",
+            "type": "address"
+          }
+        ],
+        "name": "swapExactInputMultiHop",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "tokenAmountIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "_tokenInAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_tokenOutAddress",
+            "type": "address"
+          }
+        ],
+        "name": "swapExactInputSingleHop",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address payable",
+            "name": "_to",
+            "type": "address"
+          }
+        ],
+        "name": "transferCoin",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "_from",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "_destAddr",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "TransferCoin",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "_from",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "TransferReceived",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "transferToken",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "_from",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "_destAddr",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "TransferToken",
+        "type": "event"
+      },
+      {
+        "stateMutability": "payable",
+        "type": "receive"
+      },
+      {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "poolFee",
+        "outputs": [
+          {
+            "internalType": "uint24",
+            "name": "",
+            "type": "uint24"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "quoter",
+        "outputs": [
+          {
+            "internalType": "contract IQuoter",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "quoterAddress",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "routerAddress",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "swapRouter",
+        "outputs": [
+          {
+            "internalType": "contract ISwapRouter",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ]
+}

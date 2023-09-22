@@ -1,0 +1,53 @@
+@url = http://localhost:6000/wallet
+ 
+###
+POST {{url}}/price
+Content-Type: application/json
+
+{ 
+    "tokenIn":"hlth",
+    "tokenOut":"matic",
+    "amountIn": "1"
+}
+
+###
+POST {{url}}/swap
+Content-Type: application/json
+
+{ 
+    "address":"0x61bE526e97b7598E272814ba7ce518Fd0298Fa5c",
+    "tokenIn":"hlth",
+    "tokenOut":"matic",
+    "amountIn": "1",
+    "ciphertext": "U2FsdGVkX182E+fT7cdDdLvjc+MerucSSXUoDapVr0szLEbTvK7351+oeTMBjJ3yv7fXIFvg//nPRy3/FYaGFmI9IPN95Q+fGuxgsBlnHXTeDWip1IYqBJfEWtY6G2fR"
+}
+
+
+###
+POST {{url}}/transfer
+Content-Type: application/json
+
+{ 
+    
+    "from": "0x61bE526e97b7598E272814ba7ce518Fd0298Fa5c",
+    "to": "0x1f897531Ca05c5f38f0E4887F9Adffb6e9f570bF",
+    "amount": "1",
+    "token": "runn", 
+    "assetType": "token",
+    "user_id":"10e94fc4-80e7-11ec-9a7b-42010aa00002",
+    "ciphertext":"U2FsdGVkX182E+fT7cdDdLvjc+MerucSSXUoDapVr0szLEbTvK7351+oeTMBjJ3yv7fXIFvg//nPRy3/FYaGFmI9IPN95Q+fGuxgsBlnHXTeDWip1IYqBJfEWtY6G2fR"
+}
+
+###
+GET {{url}}/create
+
+###
+POST {{url}}/verifySeed
+Content-Type: application/json
+
+{
+    "seedPhrase":"Toilet depth trade cigar advice tenant wealth maid company vanish spread twin"
+}
+ 
+ // lonely rival olive dolphin elite taste whip liquid method kitchen next route -----metamask
+ // Toilet depth trade cigar advice tenant wealth maid company vanish spread twin ---- stepn

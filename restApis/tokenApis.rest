@@ -1,0 +1,41 @@
+@url = http://localhost:3000/token
+
+###
+POST {{url}}/get
+Content-Type: application/json
+
+{ 
+    "token": "hlth",
+    "method": "allowance",
+    "owner":"0x61bE526e97b7598E272814ba7ce518Fd0298Fa5c",
+    "spender":"0x1f897531Ca05c5f38f0E4887F9Adffb6e9f570bF"
+   
+}
+
+
+###
+POST {{url}}/set
+Content-Type: application/json
+
+{ 
+    "token": "runn",
+    "method": "approve",
+    "from": "0x61bE526e97b7598E272814ba7ce518Fd0298Fa5c",
+    "to": "0x1f897531Ca05c5f38f0E4887F9Adffb6e9f570bF",
+    "amount":"10",
+    "user_id":"10e94fc4-80e7-11ec-9a7b-42010aa00002",
+    "ciphertext":"U2FsdGVkX182E+fT7cdDdLvjc+MerucSSXUoDapVr0szLEbTvK7351+oeTMBjJ3yv7fXIFvg//nPRy3/FYaGFmI9IPN95Q+fGuxgsBlnHXTeDWip1IYqBJfEWtY6G2fR"
+   
+}
+ 
+
+###
+POST {{url}}/balance
+Content-Type: application/json
+
+{ 
+    
+     "address": "0x0cca64274bc4746a79bfcb4a3b4f7776425f44bc"
+}
+
+###

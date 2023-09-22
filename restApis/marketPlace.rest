@@ -1,0 +1,58 @@
+@url = http://localhost:6000/marketplace
+
+###
+POST {{url}}/approveNFT
+Content-Type: application/json
+
+{  
+    "to": "0xcF799258E9061bd26868Dd5482cB4a82642Cd15a",
+    "tokenId": "3056" ,
+    
+    "ciphertext":"U2FsdGVkX182E+fT7cdDdLvjc+MerucSSXUoDapVr0szLEbTvK7351+oeTMBjJ3yv7fXIFvg//nPRy3/FYaGFmI9IPN95Q+fGuxgsBlnHXTeDWip1IYqBJfEWtY6G2fR"
+}
+
+###
+POST {{url}}/createMarketItem
+Content-Type: application/json
+
+{  
+    "method": "createMarketItem",
+    "nftContract":"",
+    "tokenId": "0x1f897531Ca05c5f38f0E4887F9Adffb6e9f570bF" ,
+    "price": ".01",
+    "user_id":"10e94fc4-80e7-11ec-9a7b-42010aa00002",
+    "ciphertext":"U2FsdGVkX182E+fT7cdDdLvjc+MerucSSXUoDapVr0szLEbTvK7351+oeTMBjJ3yv7fXIFvg//nPRy3/FYaGFmI9IPN95Q+fGuxgsBlnHXTeDWip1IYqBJfEWtY6G2fR"
+}
+
+###
+POST {{url}}/createMarketItem
+Content-Type: application/json
+
+{  
+    "method": "createMultiplMarketItem",
+    "nftContract": " ",
+    "tokenId": "",
+    "price":"",
+    "user_id":"10e94fc4-80e7-11ec-9a7b-42010aa00002",
+    "ciphertext":"U2FsdGVkX182E+fT7cdDdLvjc+MerucSSXUoDapVr0szLEbTvK7351+oeTMBjJ3yv7fXIFvg//nPRy3/FYaGFmI9IPN95Q+fGuxgsBlnHXTeDWip1IYqBJfEWtY6G2fR"
+}
+
+
+###
+POST {{url}}/getListedItemDetails
+Content-Type: application/json
+
+{  
+    "method": "getListedItemDetails",
+    "tokenId": "1",
+    "user_id":"10e94fc4-80e7-11ec-9a7b-42010aa00002",
+    "ciphertext":"U2FsdGVkX182E+fT7cdDdLvjc+MerucSSXUoDapVr0szLEbTvK7351+oeTMBjJ3yv7fXIFvg//nPRy3/FYaGFmI9IPN95Q+fGuxgsBlnHXTeDWip1IYqBJfEWtY6G2fR"
+}
+
+###
+POST {{url}}/getListedItemDetails
+Content-Type: application/json
+
+{  
+    "method": "fetchMarketItems"
+}
